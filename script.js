@@ -1,6 +1,6 @@
 const soundMap = {};
 
-function createSoundButton(name, filename, key) {
+function createSoundButton(name, filename, keyCombination = null) {
   const container = document.createElement('div');
   container.classList.add('sound-container');
 
@@ -27,19 +27,23 @@ function createSoundButton(name, filename, key) {
   container.appendChild(pauseButton);
   container.appendChild(volumeControl);
 
-  const buttonsContainer = document.getElementById('buttons-container');
-  buttonsContainer.appendChild(container);
+  if (keyCombination) {
+    const shortcutLabel = document.createElement('div');
+    shortcutLabel.textContent = keyCombination.toUpperCase();
+    shortcutLabel.classList.add('shortcut');
+    container.appendChild(shortcutLabel);
 
-  createSound(name, filename);
-
-  // Añadir evento de teclado
-  if (key) {
     document.addEventListener('keydown', (e) => {
-      if (e.key === key) {
+      if (e.key === keyCombination) {
         playSound(name);
       }
     });
   }
+
+  const buttonsContainer = document.getElementById('buttons-container');
+  buttonsContainer.appendChild(container);
+
+  createSound(name, filename);
 }
 
 function createSound(name, filename) {
@@ -75,7 +79,6 @@ function setVolume(name, volume) {
     console.error(`Sonido no encontrado: ${name}`);
   }
 }
-
 // Ejemplo de cómo añadir botones, puedes personalizar estos según tus necesidades
 createSoundButton('ENTRADA DE LOS MINIONS', 'INTROMINIONS.mp3');
 createSoundButton('INICIO DE LA HISTORIA', 'INICIOHISTORIA.mp3');
