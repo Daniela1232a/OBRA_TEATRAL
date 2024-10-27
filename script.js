@@ -53,6 +53,43 @@ function setVolume(name, volume) {
 }
 
 // Ejemplo de cómo añadir botones, puedes personalizar estos según tus necesidades
-createSoundButton('Sonido 1', 'sonido1.mp3');
-createSoundButton('Sonido 2', 'sonido2.mp3');
-createSoundButton('Sonido 3', 'sonido3.mp3');
+createSoundButton('ENTRADA DE LOS MINIONS', 'INTROMINIONS.mp3');
+createSoundButton('INICIO DE LA HISTORIA', 'INICIOHISTORIA.mp3');
+createSoundButton('INICIO DEL CONCURSO', 'INICIOCONCURSO.mp3');
+createSoundButton('APLUSOS DEL PUBLICO', 'APLAUSOS.mp3');
+createSoundButton('CAMPANA', 'CAMPANA.mp3');
+createSoundButton('GUITARRA', 'GUITARRA.mp3');
+createSoundButton('SOLDADO ENTRADA', 'SOLDADOENTRADA.mp3');
+createSoundButton('IPHONE', 'APHONE.mp3');
+createSoundButton('MARIO', 'MARIO.mp3');
+createSoundButton('APPLE WATCH', 'APPLEWATCH.mp3');
+createSoundButton('JESSI', 'JESSI.mp3');
+createSoundButton('RISA BURLONA LANITAS', 'RISABURLONA.mp3');
+createSoundButton('TRISTEZA LANITAS', 'LANITASTRISTE.mp3');
+createSoundButton('PATO', 'PATO.mp3');
+createSoundButton('ENTRADA BUZZ', 'ENTRADABUZZ.mp3');
+createSoundButton('COLOCAR LASER', 'COLOCARLASER.mp3');
+createSoundButton('LASER 1', 'LASER1.mp3');
+createSoundButton('LASER 2', 'LASER2.mp3');
+createSoundButton('EXPLOSION LASER', 'EXPLOSIONLASER');
+createSoundButton('BATERIA', 'BATERIA.mp3');
+createSoundButton('ENTRADA CONEJOS', 'ENTRADACONEJOS.mp3');
+createSoundButton('PILAS', 'PILAS.mp3');
+createSoundButton('CORRIENTE', 'DESCARGAELECTRICA.mp3');
+createSoundButton('EXPLOSION CORRIENTE', 'EXPLOSIONELECTRICIDAD.mp3');
+createSoundButton('FALLA CONEJOS', 'CONEJOSFALLA.mp3');
+createSoundButton('ENTRA ELSE', 'ELSEENTRADA.mp3');
+createSoundButton('APAGADA ELSE', 'ELSEAPAGANDOSE.mp3');
+createSoundButton('CUERDA ELSE', 'DARCUERDAsonido3.mp3');
+createSoundButton('SOLDADO HERIDO', 'SOLDADOHERIDO.mp3');
+createSoundButton('ENTRADA CREADOR', 'CREADOR.mp3');
+createSoundButton('SOLDADO TRISTE', 'SANACIONSOLDADO.mp3');
+createSoundButton('REPARACION SOLDADO', 'REPACIONSOLDADO.mp3');
+createSoundButton('FINAL CONCURSO', 'FINALCONCURSO.mp3');
+createSoundButton('MAR', 'MAR.mp3');
+createSoundButton('SUSPENSO', 'MIEDOSALVAR.mp3');
+createSoundButton('SALPICADURA', 'SALPICADURA.mp3');
+createSoundButton('MINIONS 1', 'HABLAMINION.mp3');
+createSoundButton('MINIONS 2', 'HABLAMINION2.mp3');
+createSoundButton('RISA MINIONS', 'RISAMINION.mp3');
+createSoundButton('COREOGRAFIA', 'COREOGRAFIA.mp3');
