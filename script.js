@@ -23,9 +23,15 @@ function createSoundButton(name, filename, keyCombination = null) {
   pauseButton.classList.add('pause-button');
   pauseButton.onclick = () => pauseSound(name);
 
+  const progressBar = document.createElement('progress');
+  progressBar.classList.add('progress-bar');
+  progressBar.value = 0;
+  progressBar.max = 1;
+
   container.appendChild(button);
   container.appendChild(pauseButton);
   container.appendChild(volumeControl);
+  container.appendChild(progressBar);
 
   if (keyCombination) {
     const shortcutLabel = document.createElement('div');
@@ -43,7 +49,12 @@ function createSoundButton(name, filename, keyCombination = null) {
   const buttonsContainer = document.getElementById('buttons-container');
   buttonsContainer.appendChild(container);
 
-  createSound(name, filename);
+  const audio = createSound(name, filename);
+
+  // Actualizar la barra de progreso
+  audio.addEventListener('timeupdate', () => {
+    progressBar.value = audio.currentTime / audio.duration;
+  });
 }
 
 function createSound(name, filename) {
@@ -79,6 +90,7 @@ function setVolume(name, volume) {
     console.error(`Sonido no encontrado: ${name}`);
   }
 }
+
 // Ejemplo de cómo añadir botones, puedes personalizar estos según tus necesidades
 createSoundButton('ENTRADA DE LOS MINIONS', 'INTROMINIONS.mp3');
 createSoundButton('INICIO DE LA HISTORIA', 'INICIOHISTORIA.mp3');
