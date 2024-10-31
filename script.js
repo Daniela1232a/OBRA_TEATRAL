@@ -133,6 +133,7 @@ createSoundButton('MINIONS 1', 'HABLAMINION.mp3', 'w');
 createSoundButton('MINIONS 2', 'HABLAMINION2.mp3', 'e');
 createSoundButton('MINIONS 3', 'MINIONS3.mp3');
 createSoundButton('MINIONS 4', 'MINIONS4.mp3');
-createSoundButton('MINIONS 5', 'MINIONS5.mp3');
+createSoundButton('MINIONS 5', 'MINIONS6.mp3');
+createSoundButton('MINIONS 6', 'MINIONS7.mp3');
 createSoundButton('RISA MINIONS', 'RISAMINION.mp3');
 createSoundButton('COREOGRAFIA', 'COREOGRAFIA.mp3');
