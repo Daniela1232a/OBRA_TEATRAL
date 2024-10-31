@@ -95,7 +95,8 @@ function setVolume(name, volume) {
 createSoundButton('ENTRADA DE LOS MINIONS', 'INTROMINIONS.mp3');
 createSoundButton('INICIO DE LA HISTORIA', 'INICIOHISTORIA.mp3');
 createSoundButton('INICIO DEL CONCURSO', 'INICIOCONCURSO.mp3');
-createSoundButton('APLAUSOS DEL PUBLICO', 'APLAUSOS.mp3', 'r');
+createSoundButton('APLAUSOS DEL PUBLICO', 'APLAUSOS.mp3');
+createSoundButton('APLAUSOS', 'APLAUSOS2.mp3', 'r');
 createSoundButton('CAMPANA', 'CAMPANA.mp3', 't');
 createSoundButton('GUITARRA', 'GUITARRA.mp3', 'y');
 createSoundButton('SOLDADO ENTRADA', 'SOLDADOENTRADA.mp3', 'u');
